@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>Wikipedia | Viewer</title>
+  	<meta charset="utf-8"/>
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Raleway:300' />
+  	<link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css' />
+  	<link rel='stylesheet' type='text/css' href='style.css' />
+  	<link rel='icon' type='image/x-icon' href='favicon.ico?' />
+</head>
+<body>
+	<div class='container-fluid'>
+		<div class='row text-center'>
+			<div id='searchPanel' class='col-md-4 panel'>
+				<h1>Wiki Viewer</h1>
+				<hr />
+				<br />
+				<button id='randomPageBtn' class='btn btn-primary'><h4>Random Page</h4></button>
+				<br /><h4>OR</h4>
+				<div class='input-group input-group-lg'>
+  					<input id='searchTerms' type='text' class='form-control' placeholder='Search for an article'>
+  					<span class='input-group-btn'>
+        				<button id='searchBtn' class='btn btn-primary' type='button'>
+        					<span class=' glyphicon glyphicon-search'></span>
+        				</button>
+      				</span>
+				</div>
+				<div id='alert'></div><br />
+				<a id='searchResultTemplate' class='search-result'>
+					<div class='article'>
+						<h4 class='page-title'>Page Title</h4>
+						<p class='page-snippet'>Page snippet....Herrrrooooo</p>
+					</div>
+				</a>
+			</div>
+			<div id='viewer' class='col-md-8 panel'>
+				<iframe id='wikiFrame' src='https://en.wikipedia.org'></iframe>
+			</div>
+		</div>
+		<div class='row text-center'>
+			<div class='col-md-12'>
+				<h4>Made with <span class='glyphicon glyphicon-heart'></span> by <a href='http://aptran.github.io' target='_blank'>Anh Tran</a></h4>
+			</div>
+		</div>
+	</div>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src='main.js'></script>
+</body>
+</html>

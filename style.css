@@ -1,0 +1,45 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #55A1DD;
+  color: #FFF; }
+
+a {
+	color: #FFF; }
+
+a:hover {
+	cursor: pointer;
+	text-decoration: none; }
+
+.btn-primary {
+	background-color: #55A1DD;
+	color: #FFF; }
+
+.panel {
+	height: 90%; }
+
+#searchPanel {
+	background-color: #444; }
+
+#alert {
+	display: none; }
+
+.article {
+	background-color: #FFF;
+	color: #444;
+	border-radius: 5px;
+	padding: 5px;
+	margin-bottom: 10px; }
+
+.article:hover {
+	padding: 0px;
+	border: 5px #55A1DD solid; }
+
+@media only screen and (max-width : 992px) { #viewer { display: none; } }
+#viewer {
+	padding: 0;
+}
+
+#viewer iframe {
+	border: none;
+	height: 100%;
+	width: 100%; }
